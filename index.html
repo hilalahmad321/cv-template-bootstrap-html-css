@@ -9,6 +9,9 @@
         <title>Cv Builder</title>
     </head>
     <body>
+        <div class="loader">
+            <img src="images/1488.gif" alt="">
+        </div>
         <div class="header-wreapper">
             <div class="container">
                 <div class="row">
@@ -220,5 +223,14 @@
             </div>
         </div>
 
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                setTimeout(()=>{
+                    $('.loader').hide();
+                },5000)
+            })
+        </script>
     </body>
 </html>
